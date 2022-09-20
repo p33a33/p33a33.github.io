@@ -32,10 +32,7 @@ const IndexPage = () => {
                             <img src={gitIcon} width={36} />
                         </a>
 
-                        <a
-                            href="https://www.linkedin.com/in/%EC%84%B1%EB%AF%BC-%EC%A1%B0-8a22ab202/"
-                            target="_blank"
-                        >
+                        <a href="www.linkedin.com/in/조성민" target="_blank">
                             <img src={linkedinIcon} width={40} />
                         </a>
 
@@ -400,13 +397,15 @@ const IndexPage = () => {
                         <div className="left">
                             <h3>코드스테이츠</h3>
                             <br />
-                            <div className="period">(2020. 6. ~ 2020. 11.)</div>
+                            <div className="period">
+                                (개발 부트캠프, 2020. 6. ~ 2020. 11.)
+                            </div>
                         </div>
                         <div className="right">
                             <div className="project">
                                 <h4>
-                                    Advanced Softeware Engineering, Immersive
-                                    Program 22th 수료
+                                    Advanced Softeware Engineering, <br />
+                                    Immersive Program 22th 수료
                                 </h4>
                             </div>
                         </div>
@@ -425,7 +424,7 @@ const IndexPage = () => {
                         </div>
                         <div className="right">
                             <div className="project">
-                                <h4>경영학과 학사</h4>
+                                <h4>경영학과 학사 졸업</h4>
                             </div>
                         </div>
                     </div>
@@ -437,4 +436,12 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head: HeadFC = () => <title>Home Page</title>;
+export const Head: HeadFC = () => (
+    <>
+        <title>프론트엔드 개발자 조성민 이력서</title>
+        <meta
+            name="description"
+            content="서울에서 일하고, 타입스크립트와 리액트를 주로 사용하고있는 2년차 프론트엔드 엔지니어 조성민입니다. 지식공유 및 커피챗에 열려있습니다. resume of web frontend developer who working in seoul for 2years. Typescript, React is my major tech stack. open to  job offer, interview or coffee chat, too  "
+        />
+    </>
+);
