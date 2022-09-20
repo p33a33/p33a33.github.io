@@ -1,6 +1,12 @@
 import * as React from "react";
 import type { HeadFC } from "gatsby";
 import "./resume.scss";
+import gitIcon from "../images/logo--github.svg";
+import linkedinIcon from "../images/logo--linkedin.svg";
+import emailIcon from "../images/email.svg";
+import javascriptIcon from "../images/icons8-javascript.svg";
+import typescriptIcon from "../images/typescriptlang-icon.svg";
+import reactIcon from "../images/React-icon.svg";
 
 const IndexPage = () => {
     return (
@@ -11,8 +17,40 @@ const IndexPage = () => {
                 {/* 간단한 자기소개 */}
                 <div className="section">
                     <h1 className="resume-title">
-                        안녕하세요? 개발자 조성민입니다.
+                        프론트엔드 개발자 조성민입니다.
                     </h1>
+                    <div
+                        style={{
+                            display: "flex",
+                            alignItems: "center",
+                            width: "100%",
+                            justifyContent: "flex-end",
+                            gap: 16,
+                        }}
+                    >
+                        <a href="https://github.com/p33a33" target="_blank">
+                            <img src={gitIcon} width={36} />
+                        </a>
+
+                        <a
+                            href="https://www.linkedin.com/in/%EC%84%B1%EB%AF%BC-%EC%A1%B0-8a22ab202/"
+                            target="_blank"
+                        >
+                            <img src={linkedinIcon} width={40} />
+                        </a>
+
+                        <div
+                            style={{
+                                display: "flex",
+                                alignItems: "center",
+                                gap: 4,
+                                fontWeight: 700,
+                            }}
+                        >
+                            <img src={emailIcon} width={40} />
+                            p33a33@gmail.com
+                        </div>
+                    </div>
                     <div className="content">
                         <p className="intro">
                             서울에서 2년차 프론트엔드 엔지니어로 일하고
@@ -231,6 +269,117 @@ const IndexPage = () => {
                 </div>
 
                 <div className="section">
+                    <h2 className="section-title">기술스택</h2>
+
+                    <div className="tech-stack" style={{ rowGap: "8px" }}>
+                        <div
+                            style={{
+                                display: "flex",
+                                alignItems: "center",
+                                columnGap: 8,
+                                fontSize: 20,
+                                fontWeight: 700,
+                            }}
+                        >
+                            <img
+                                src={javascriptIcon}
+                                style={{ borderRadius: 8 }}
+                                width={36}
+                            />
+                            Javascript
+                        </div>
+                        <ul
+                            style={{
+                                display: "flex",
+                                flexDirection: "column",
+                                gap: 16,
+                                fontSize: 18,
+                                lineHeight: "160%",
+                            }}
+                        >
+                            <li>
+                                Arrow function, Destructuring, Template Literal
+                                등 <b>ES6 이상 문법 사용</b>에 익숙합니다.
+                            </li>
+                            <li>
+                                Async Await, Promise를 사용하여{" "}
+                                <b>적절하게 비동기 작업을 처리</b>할 수
+                                있습니다.
+                            </li>
+                        </ul>
+
+                        <div
+                            style={{
+                                display: "flex",
+                                alignItems: "center",
+                                columnGap: 8,
+                                fontSize: 20,
+                                fontWeight: 700,
+                            }}
+                        >
+                            <img
+                                src={typescriptIcon}
+                                style={{ borderRadius: 8 }}
+                                width={36}
+                            />
+                            Typescript
+                        </div>
+                        <ul
+                            style={{
+                                display: "flex",
+                                flexDirection: "column",
+                                gap: 16,
+                                fontSize: 18,
+                                lineHeight: "160%",
+                            }}
+                        >
+                            <li>
+                                <b>Generic</b>을 이용해 재사용성을 고려한
+                                타이핑을 할 수 있습니다.
+                            </li>
+                            <li>
+                                적절한 <b>Interface 구성</b>으로 확장가능한
+                                타이핑을 할 수 있습니다.
+                            </li>
+                        </ul>
+                        <div
+                            style={{
+                                display: "flex",
+                                alignItems: "center",
+                                gap: 8,
+                                fontSize: 20,
+                                fontWeight: 700,
+                            }}
+                        >
+                            <img
+                                src={reactIcon}
+                                style={{ borderRadius: 8 }}
+                                width={36}
+                            />
+                            React
+                        </div>
+                        <ul
+                            style={{
+                                display: "flex",
+                                flexDirection: "column",
+                                gap: 16,
+                                fontSize: 18,
+                                lineHeight: "160%",
+                            }}
+                        >
+                            <li>
+                                반복적인 로직에 대해 적절하게 <b>Custom Hook</b>
+                                을 구성할 수 있습니다.
+                            </li>
+                            <li>
+                                <b>적절한 상태 분리</b>를 통해 불필요한 렌더링을
+                                방지할 수 있습니다.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div className="section">
                     <h2 className="section-title">교육</h2>
 
                     <div className="content">
@@ -241,7 +390,10 @@ const IndexPage = () => {
                         </div>
                         <div className="right">
                             <div className="project">
-                                <h4>Software Engeenier Course</h4>
+                                <h4>
+                                    Advanced Softeware Engineering, Immersive
+                                    Program 22th 수료
+                                </h4>
                             </div>
                         </div>
                     </div>
