@@ -271,111 +271,125 @@ const IndexPage = () => {
                 <div className="section">
                     <h2 className="section-title">기술스택</h2>
 
-                    <div className="tech-stack" style={{ rowGap: "8px" }}>
-                        <div
-                            style={{
-                                display: "flex",
-                                alignItems: "center",
-                                columnGap: 8,
-                                fontSize: 20,
-                                fontWeight: 700,
-                            }}
-                        >
-                            <img
-                                src={javascriptIcon}
-                                style={{ borderRadius: 8 }}
-                                width={36}
-                            />
-                            Javascript
+                    <div
+                        className="tech-stack"
+                        style={{
+                            display: "flex",
+                            flexDirection: "column",
+                            rowGap: "32px",
+                        }}
+                    >
+                        <div>
+                            <div
+                                style={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                    columnGap: 8,
+                                    fontSize: 20,
+                                    fontWeight: 700,
+                                }}
+                            >
+                                <img
+                                    src={javascriptIcon}
+                                    style={{ borderRadius: 8 }}
+                                    width={36}
+                                />
+                                Javascript
+                            </div>
+                            <ul
+                                style={{
+                                    display: "flex",
+                                    flexDirection: "column",
+                                    gap: 16,
+                                    fontSize: 18,
+                                    lineHeight: "160%",
+                                }}
+                            >
+                                <li>
+                                    Arrow function, Destructuring, Template
+                                    Literal 등 <b>ES6 이상 문법 사용</b>에
+                                    익숙합니다.
+                                </li>
+                                <li>
+                                    Async Await, Promise를 사용하여{" "}
+                                    <b>적절하게 비동기 작업을 처리</b>할 수
+                                    있습니다.
+                                </li>
+                            </ul>
                         </div>
-                        <ul
-                            style={{
-                                display: "flex",
-                                flexDirection: "column",
-                                gap: 16,
-                                fontSize: 18,
-                                lineHeight: "160%",
-                            }}
-                        >
-                            <li>
-                                Arrow function, Destructuring, Template Literal
-                                등 <b>ES6 이상 문법 사용</b>에 익숙합니다.
-                            </li>
-                            <li>
-                                Async Await, Promise를 사용하여{" "}
-                                <b>적절하게 비동기 작업을 처리</b>할 수
-                                있습니다.
-                            </li>
-                        </ul>
 
-                        <div
-                            style={{
-                                display: "flex",
-                                alignItems: "center",
-                                columnGap: 8,
-                                fontSize: 20,
-                                fontWeight: 700,
-                            }}
-                        >
-                            <img
-                                src={typescriptIcon}
-                                style={{ borderRadius: 8 }}
-                                width={36}
-                            />
-                            Typescript
+                        <div>
+                            <div
+                                style={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                    columnGap: 8,
+                                    fontSize: 20,
+                                    fontWeight: 700,
+                                }}
+                            >
+                                <img
+                                    src={typescriptIcon}
+                                    style={{ borderRadius: 8 }}
+                                    width={36}
+                                />
+                                Typescript
+                            </div>
+                            <ul
+                                style={{
+                                    display: "flex",
+                                    flexDirection: "column",
+                                    gap: 16,
+                                    fontSize: 18,
+                                    lineHeight: "160%",
+                                }}
+                            >
+                                <li>
+                                    <b>Generic</b>을 이용해 재사용성을 고려한
+                                    타이핑을 할 수 있습니다.
+                                </li>
+                                <li>
+                                    적절한 <b>Interface 구성</b>으로 확장가능한
+                                    타이핑을 할 수 있습니다.
+                                </li>
+                            </ul>
                         </div>
-                        <ul
-                            style={{
-                                display: "flex",
-                                flexDirection: "column",
-                                gap: 16,
-                                fontSize: 18,
-                                lineHeight: "160%",
-                            }}
-                        >
-                            <li>
-                                <b>Generic</b>을 이용해 재사용성을 고려한
-                                타이핑을 할 수 있습니다.
-                            </li>
-                            <li>
-                                적절한 <b>Interface 구성</b>으로 확장가능한
-                                타이핑을 할 수 있습니다.
-                            </li>
-                        </ul>
-                        <div
-                            style={{
-                                display: "flex",
-                                alignItems: "center",
-                                gap: 8,
-                                fontSize: 20,
-                                fontWeight: 700,
-                            }}
-                        >
-                            <img
-                                src={reactIcon}
-                                style={{ borderRadius: 8 }}
-                                width={36}
-                            />
-                            React
+                        <div>
+                            <div
+                                style={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                    gap: 8,
+                                    fontSize: 20,
+                                    fontWeight: 700,
+                                }}
+                            >
+                                <img
+                                    src={reactIcon}
+                                    style={{ borderRadius: 8 }}
+                                    width={36}
+                                />
+                                React
+                            </div>
+                            <ul
+                                style={{
+                                    display: "flex",
+                                    flexDirection: "column",
+                                    gap: 16,
+                                    fontSize: 18,
+                                    lineHeight: "160%",
+                                }}
+                            >
+                                <li>
+                                    반복적인 로직에 대해 적절하게{" "}
+                                    <b>Custom Hook</b>을 구성할 수 있습니다.
+                                </li>
+                                <li>
+                                    <b>적절한 상태 분리</b>를 통해 불필요한
+                                    렌더링을 방지할 수 있습니다.
+                                </li>
+                            </ul>
                         </div>
-                        <ul
-                            style={{
-                                display: "flex",
-                                flexDirection: "column",
-                                gap: 16,
-                                fontSize: 18,
-                                lineHeight: "160%",
-                            }}
-                        >
-                            <li>
-                                반복적인 로직에 대해 적절하게 <b>Custom Hook</b>
-                                을 구성할 수 있습니다.
-                            </li>
-                            <li>
-                                <b>적절한 상태 분리</b>를 통해 불필요한 렌더링을
-                                방지할 수 있습니다.
-                            </li>
-                        </ul>
                     </div>
                 </div>
 
