@@ -7,6 +7,7 @@ import emailIcon from "../images/email.svg";
 import javascriptIcon from "../images/icons8-javascript.svg";
 import typescriptIcon from "../images/typescriptlang-icon.svg";
 import reactIcon from "../images/React-icon.svg";
+import tistoryIcon from '../images/tistory.svg';
 
 const IndexPage = () => {
     return (
@@ -32,7 +33,11 @@ const IndexPage = () => {
                             <img src={gitIcon} width={36} />
                         </a>
 
-                        <a href="www.linkedin.com/in/조성민" target="_blank">
+                        <a href="https://be-better-dev.tistory.com" target="_blank">
+                            <img src={tistoryIcon} width={30} />
+                        </a>
+
+                        <a href="https://linkedin.com/in/조성민" target="_blank">
                             <img src={linkedinIcon} width={40} />
                         </a>
 
@@ -398,7 +403,7 @@ const IndexPage = () => {
                             <h3>코드스테이츠</h3>
                             <br />
                             <div className="period">
-                                (개발 부트캠프, 2020. 6. ~ 2020. 11.)
+                                (2020. 6. ~ 2020. 11)
                             </div>
                         </div>
                         <div className="right">
@@ -443,5 +448,8 @@ export const Head: HeadFC = () => (
             name="description"
             content="서울에서 일하고, 타입스크립트와 리액트를 주로 사용하고있는 2년차 프론트엔드 엔지니어 조성민입니다. 지식공유 및 커피챗에 열려있습니다. resume of web frontend developer who working in seoul for 2years. Typescript, React is my major tech stack. open to  job offer, interview or coffee chat, too  "
         />
+        <style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+</style>
     </>
 );
